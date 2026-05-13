@@ -1,0 +1,229 @@
+{
+  "project": "FSA MkDocs Theme Rebrand",
+  "description": "Rebrand ons_mkdocs_theme as fsa_mkdocs_theme, replacing all ONS branding, colours, fonts, metadata and references with FSA design standards.",
+  "author": "james.westwood@food.gov.uk",
+  "created": "2026-05-13",
+  "phases": [
+    {
+      "id": "phase-1",
+      "name": "Rename Folder and Package",
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Rename theme directory",
+          "description": "Run `git mv ons_mkdocs_theme/ fsa_mkdocs_theme/` to rename the theme directory while preserving git history.",
+          "files": ["ons_mkdocs_theme/"],
+          "status": "not-started"
+        },
+        {
+          "id": "T02",
+          "title": "Copy FSA logo into theme assets",
+          "description": "Copy fsa-logo.svg from C:\\repos\\ladataproject_etl\\docs\\assets\\fsa-logo.svg into fsa_mkdocs_theme/assets/images/fsa-logo.svg.",
+          "files": ["fsa_mkdocs_theme/assets/images/fsa-logo.svg"],
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "name": "Package Build Config",
+      "tasks": [
+        {
+          "id": "T03",
+          "title": "Update setup.cfg",
+          "description": "Update name to fsa_mkdocs_theme, set author_email to james.westwood@food.gov.uk, update description to reference FSA, remove url, update [options.package_data] key from ons_mkdocs_theme to fsa_mkdocs_theme.",
+          "files": ["setup.cfg"],
+          "changes": {
+            "name": "fsa_mkdocs_theme",
+            "author": "",
+            "author_email": "james.westwood@food.gov.uk",
+            "description": "An FSA MkDocs Theme based on Material for MkDocs for creating documentation websites",
+            "url": "",
+            "package_data_key": "fsa_mkdocs_theme"
+          },
+          "status": "not-started"
+        },
+        {
+          "id": "T04",
+          "title": "Update MANIFEST.in",
+          "description": "Replace ons_mkdocs_theme with fsa_mkdocs_theme in recursive-include directive.",
+          "files": ["MANIFEST.in"],
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "name": "MkDocs Config",
+      "tasks": [
+        {
+          "id": "T05",
+          "title": "Update mkdocs.yml",
+          "description": "Update site_name to 'FSA MkDocs Theme', remove repo_name and repo_url, update custom_dir to fsa_mkdocs_theme, update logo path to assets/images/fsa-logo.svg, update copyright to FSA/food.gov.uk, remove social link, update watch path.",
+          "files": ["mkdocs.yml"],
+          "changes": {
+            "site_name": "FSA MkDocs Theme",
+            "repo_name": null,
+            "repo_url": null,
+            "custom_dir": "fsa_mkdocs_theme",
+            "logo": "assets/images/fsa-logo.svg",
+            "copyright": "&copy; <a href=\"https://www.food.gov.uk\">Food Standards Agency 2024</a>",
+            "social": null,
+            "watch": ["docs/", "fsa_mkdocs_theme/"]
+          },
+          "status": "not-started"
+        },
+        {
+          "id": "T06",
+          "title": "Update mkdocs_theme.yml font",
+          "description": "Change default body font from Roboto to Open Sans in fsa_mkdocs_theme/mkdocs_theme.yml.",
+          "files": ["fsa_mkdocs_theme/mkdocs_theme.yml"],
+          "changes": {
+            "font.text": "Open Sans"
+          },
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "name": "CSS Rebrand",
+      "tasks": [
+        {
+          "id": "T07",
+          "title": "Rebrand main.css with FSA colours and fonts",
+          "description": "Add Google Fonts @import for Open Sans and Fira Sans. Update :root CSS variables to FSA palette. Add Fira Sans font-family to heading (h1-h4) rule.",
+          "files": ["fsa_mkdocs_theme/assets/stylesheets/main.css"],
+          "css_variable_changes": {
+            "--font-color": {"from": "#222222", "to": "#101010"},
+            "--font-family": {"from": "'Helvetica', sans-serif", "to": "'Open Sans', sans-serif"},
+            "--links-color": {"from": "#00796b", "to": "#007c75"},
+            "--links-hover-color": {"from": "#a8bd3a", "to": "#014b4c"},
+            "--logo-header-nav-font-color": {"from": "#003d59", "to": "#014b4c"},
+            "--header-nav-background-color": {"from": "#003d59", "to": "#007c75"},
+            "--title-font-color": {"from": "#003d59", "to": "#014b4c"},
+            "--top-nav-links-hover-color": {"from": "#a8bd3a", "to": "#f1c400"},
+            "--footer-background-color": {"from": "#263238", "to": "#014b4c"}
+          },
+          "google_fonts_import": "https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Open+Sans:wght@400;600&display=swap",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "phase-5",
+      "name": "Docs Content",
+      "tasks": [
+        {
+          "id": "T08",
+          "title": "Update docs/setup.md",
+          "description": "Replace pip install ons_mkdocs_theme with fsa_mkdocs_theme. Update folder creation instructions and git clone command.",
+          "files": ["docs/setup.md"],
+          "status": "not-started"
+        },
+        {
+          "id": "T09",
+          "title": "Update docs/creating-your-site.md",
+          "description": "Update theme name in YAML code example (line 43) from ons_mkdocs_theme to fsa_mkdocs_theme.",
+          "files": ["docs/creating-your-site.md"],
+          "status": "not-started"
+        },
+        {
+          "id": "T10",
+          "title": "Update docs/building-your-site.md",
+          "description": "Update page title frontmatter from 'ONS MkDocs Theme - Building Your Site' to 'FSA MkDocs Theme - Building Your Site'.",
+          "files": ["docs/building-your-site.md"],
+          "status": "not-started"
+        },
+        {
+          "id": "T11",
+          "title": "Update contributing docs",
+          "description": "Remove or genericise ONSdigital issue tracker URLs in reporting-a-bug.md and reporting-a-docs-issue.md.",
+          "files": [
+            "docs/contributing/reporting-a-bug.md",
+            "docs/contributing/reporting-a-docs-issue.md"
+          ],
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "phase-6",
+      "name": "README",
+      "tasks": [
+        {
+          "id": "T12",
+          "title": "Update README.md",
+          "description": "Update logo <img> src to fsa-logo.svg. Replace all body text references to 'ONS MkDocs Theme' with 'FSA MkDocs Theme'. Update pip install command. Remove git clone URL.",
+          "files": ["README.md"],
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "phase-7",
+      "name": "GitHub Issue Templates",
+      "tasks": [
+        {
+          "id": "T13",
+          "title": "Update bug_issue.yml",
+          "description": "Replace all onsdigital.github.io/ons_mkdocs_theme and ONSdigital/ons_mkdocs_theme URLs in bug issue template.",
+          "files": [".github/ISSUE_TEMPLATE/bug_issue.yml"],
+          "status": "not-started"
+        },
+        {
+          "id": "T14",
+          "title": "Update documentation_issue.yml",
+          "description": "Replace all onsdigital.github.io/ons_mkdocs_theme and ONSdigital/ons_mkdocs_theme URLs in documentation issue template.",
+          "files": [".github/ISSUE_TEMPLATE/documentation_issue.yml"],
+          "status": "not-started"
+        }
+      ]
+    }
+  ],
+  "verification": [
+    {
+      "id": "V01",
+      "check": "pip install -e . installs package as fsa_mkdocs_theme"
+    },
+    {
+      "id": "V02",
+      "check": "mkdocs serve renders site_name as 'FSA MkDocs Theme'"
+    },
+    {
+      "id": "V03",
+      "check": "Header background is #007c75, footer background is #014b4c"
+    },
+    {
+      "id": "V04",
+      "check": "FSA logo renders correctly (not ONS logo)"
+    },
+    {
+      "id": "V05",
+      "check": "Headings use Fira Sans; body text uses Open Sans"
+    },
+    {
+      "id": "V06",
+      "check": "No remaining ONS references: grep -r 'ons_mkdocs_theme|ONSdigital|ons\\.gov' --include='*.py' --include='*.yml' --include='*.yaml' --include='*.cfg' --include='*.md' --include='*.css' ."
+    }
+  ],
+  "fsa_design_standards": {
+    "colours": {
+      "primary": "#007c75",
+      "primary_dark": "#014b4c",
+      "footer_meta": "#002a2a",
+      "accent": "#f1c400",
+      "body_text": "#101010",
+      "link": "#007c75",
+      "link_hover": "#014b4c",
+      "nav_hover": "#f1c400",
+      "error": "#e31837",
+      "warning": "#fdb913"
+    },
+    "fonts": {
+      "body": "Open Sans, sans-serif",
+      "headings": "Fira Sans, sans-serif",
+      "heading_weight": 700
+    }
+  }
+}
