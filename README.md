@@ -2,6 +2,11 @@
     <img src="ons_mkdocs_theme/assets/images/logo.svg" width="450px">
 </p>
 
+## :art: Design standards
+
+Our design standards are available on the FSA Brand Hub:
+https://brandhub.food.gov.uk/d/EFmxfa6xzAAW
+
 ## :red_car: Getting Started
 
 Setting up your documentation site to use this theme couldn't be easier. The quickest and easiest way to get up and running is to install with `pip`.
