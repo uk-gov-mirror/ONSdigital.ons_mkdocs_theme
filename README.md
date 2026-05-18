@@ -17,12 +17,12 @@ To be able to use this theme, you need to be using at least **Python v3.8**.
 
 #### with pip
 
-ONS MkDocs Theme is published as a Python package and can be installed with
+FSA MkDocs Theme is published as a Python package and can be installed with
 `pip`, ideally by using a [virtual environment][virtual environment]. Open up a terminal and install
-ONS MkDocs Theme with:
+FSA MkDocs Theme with:
 
 ```
-pip install ons_mkdocs_theme
+pip install fsa_mkdocs_theme
 ```
 
 This will automatically install compatible versions of all dependencies:
@@ -37,25 +37,25 @@ This will automatically install compatible versions of all dependencies:
 
 #### with git
 
-ONS MkDocs Theme can be directly used from [GitHub] by cloning the
+FSA MkDocs Theme can be directly used from [GitHub] by cloning the
 repository into a subfolder of your project root folder.
 
-Simply create a folder called `ons_mkdocs_theme`. In the terminal, ensure you are in the root folder directory of your project and run the following command:
+Simply create a folder called `fsa_mkdocs_theme`. In the terminal, ensure you are in the root folder directory of your project and run the following command:
 
 ```
-mkdir ons_mkdocs_theme
+mkdir fsa_mkdocs_theme
 ```
 
 You then need to `cd` into the new directory with the following command:
 
 ```
-cd ons_mkdocs_theme
+cd fsa_mkdocs_theme
 ```
 
 To clone the theme files, run the following command:
 
 ```
-git clone https://github.com/ONSdigital/ons_mkdocs_theme
+git clone https://github.com/FoodStandardsAgency/fsa_mkdocs_theme
 ```
 
 Next, install the theme and its dependencies with:
@@ -64,7 +64,7 @@ Next, install the theme and its dependencies with:
 pip install -e .
 ```
 
-[GitHub]: https://github.com/ONSdigital/ons_mkdocs_theme
+[GitHub]: https://github.com/FoodStandardsAgency/fsa_mkdocs_theme
 [virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
 [semantic versioning]: https://semver.org/
 [MkDocs]: https://mkdocs.org

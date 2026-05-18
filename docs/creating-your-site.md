@@ -1,7 +1,7 @@
 ---
 hide:
   - navigation
-title: ONS MkDocs Theme - Creating Your Site
+title: FSA MkDocs Theme - Creating Your Site
 ---
 
 <style>
@@ -13,7 +13,7 @@ title: ONS MkDocs Theme - Creating Your Site
 
 <style> .md-typeset h1 { display: none; } .md-main__inner { margin-top: 0px; } .md-content__button { display: none; } </style>
 
-After you've [installed] ONS MkDocs Theme, you can create your project
+After you've [installed] FSA MkDocs Theme, you can create your project
 documentation using the `mkdocs` executable. In the terminal, ensure you are in your project's root folder and run the following command:
 
 ```
@@ -40,7 +40,7 @@ repo_url: <insert repo url>
 docs_dir: docs
 
 theme:
-  name: ons_mkdocs_theme
+  name: fsa_mkdocs_theme
   features:
     - announce.dismiss
     - content.action.edit

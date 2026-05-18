@@ -1,0 +1,81 @@
+/* ── FSA Colour Palette ──────────────────────────────────────────────────── */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:              #007c75;
+  --md-primary-fg-color--light:       #6cb33f;
+  --md-primary-fg-color--dark:        #014b4c;
+  --md-accent-fg-color:               #f1c400;
+  --md-accent-fg-color--transparent:  #f1c40020;
+  --md-typeset-a-color:               #007c75;
+  --md-default-fg-color:              #101010;
+  --md-default-bg-color:              #ffffff;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.md-header {
+  background-color: #007c75;
+}
+
+.md-tabs {
+  background-color: #014b4c;
+}
+
+/* ── Links ───────────────────────────────────────────────────────────────── */
+.md-typeset a {
+  color: #007c75;
+}
+
+.md-typeset a:hover {
+  color: #014b4c;
+}
+
+/* ── Typography ─────────────────────────────────────────────────────────── */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  color: #014b4c;
+}
+
+body,
+.md-typeset {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ── Navigation sidebar ─────────────────────────────────────────────────── */
+.md-nav__link--active,
+.md-nav__link:hover {
+  color: #007c75;
+}
+
+/* ── Search highlight ───────────────────────────────────────────────────── */
+.md-search-result mark {
+  color: #007c75;
+  background-color: #f1c40040;
+}
+
+/* ── Admonition accents ─────────────────────────────────────────────────── */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: #007c75;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: #fdb913;
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: #e31837;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+.md-footer {
+  background-color: #014b4c;
+}
+
+.md-footer-meta {
+  background-color: #002a2a;
+}

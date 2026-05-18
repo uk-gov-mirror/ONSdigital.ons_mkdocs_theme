@@ -1,11 +1,11 @@
 # Bug reports
 
-ONS MkDocs Theme is an actively maintained project that we constantly strive
+FSA MkDocs Theme is an actively maintained project that we constantly strive
 to improve. With a project of this size and complexity, bugs may occur. If you
 think you have discovered a bug, you can help us by submitting an issue in our
 public [issue tracker], following this guide.
 
-[issue tracker]: https://github.com/ONSdigital/ons_mkdocs_theme/issues
+[issue tracker]: https://github.com/FoodStandardsAgency/fsa_mkdocs_theme/issues
 
 ### Remove customisations
 
@@ -25,7 +25,7 @@ adjusted all partials you have overridden.
 
 !!! warning "customisations mentioned in our documentation"
 
-    A handful of the features ONS MkDocs Theme offers can only be implemented
+    A handful of the features FSA MkDocs Theme offers can only be implemented
     with customisations. If you find a bug in any of the customisations [that
     our documentation explicitly mentions], you are, of course, encouraged to
     report it.

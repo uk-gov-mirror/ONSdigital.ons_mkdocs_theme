@@ -1,7 +1,7 @@
 ---
 hide:
   - navigation
-title: ONS MkDocs Theme - Customisation
+title: FSA MkDocs Theme - Customisation
 ---
 
 <style>
@@ -13,14 +13,14 @@ title: ONS MkDocs Theme - Customisation
 
 <style> .md-typeset h1 { display: none; } .md-main__inner { margin-top: 0px; } .md-content__button { display: none; } </style>
 
-Project documentation is as diverse as the projects themselves and ONS MkDocs Theme is a great starting point for making it look beautiful. However, as you
+Project documentation is as diverse as the projects themselves and FSA MkDocs Theme is a great starting point for making it look beautiful. However, as you
 write your documentation, you may reach a point where small adjustments are
 necessary to preserve your brand's style.
 
 ### Adding assets
 
 [MkDocs] provides several ways to customize a theme. In order to make a few
-small tweaks to ONS MkDocs Theme, you can just add CSS files to
+small tweaks to FSA MkDocs Theme, you can just add CSS files to
 the `docs` directory.
 
 [MkDocs]: https://www.mkdocs.org
@@ -50,14 +50,14 @@ extra_css:
 
 If you want to alter the HTML source (e.g. add or remove some parts), you can
 extend the theme. MkDocs supports [theme extension], an easy way to override
-parts of ONS MkDocs Theme without forking from git. This ensures that you
+parts of FSA MkDocs Theme without forking from git. This ensures that you
 can update to the latest version more easily.
 
 [theme extension]: https://www.mkdocs.org/user-guide/customizing-your-theme/#using-the-theme-custom_dir
 
 ### Setup and theme structure
 
-Enable ONS MkDocs Theme as usual in `mkdocs.yml`, and create a new folder
+Enable FSA MkDocs Theme as usual in `mkdocs.yml`, and create a new folder
 for `overrides` which you then reference using the [`custom_dir`][custom_dir]
 setting:
 
@@ -70,7 +70,7 @@ theme:
 !!! warning "Theme extension prerequisites"
 
     As the [`custom_dir`][custom_dir] setting is used for the theme extension
-    process, ONS MkDocs Theme needs to be installed via `pip` and referenced
+    process, FSA MkDocs Theme needs to be installed via `pip` and referenced
     with the [`name`][name] setting in `mkdocs.yml`. It will not work when
     cloning from `git`.
 

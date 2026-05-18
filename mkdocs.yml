@@ -1,11 +1,17 @@
-site_name: ONS MkDocs Theme
-repo_name: ons_mkdocs_theme
-repo_url: https://github.com/ONSdigital/ons_mkdocs_theme
+site_name: FSA MkDocs Theme
+repo_name: FSA_mkdocs_theme
+repo_url: https://github.com/FoodStandardsAgency/FSA_mkdocs_theme
 docs_dir: docs
 
 theme:
   name: material
   custom_dir: ons_mkdocs_theme
+  palette:
+    primary: custom
+    accent: custom
+  font:
+    text: Open Sans
+    code: Roboto Mono
   features:
     - content.code.copy
     - content.code.select
@@ -20,8 +26,14 @@ theme:
     - search.share
     - search.suggest
   language: en
-  logo: assets/images/logo.svg
+  logo: assets/images/fsa-logo.svg
   favicon: assets/images/favicon.ico
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Open+Sans:wght@400;600&display=swap
 
 nav:
   - Home: index.md
@@ -29,6 +41,7 @@ nav:
   - Creating your site: creating-your-site.md
   - Building your site: building-your-site.md
   - Customisation: customisation.md
+  - Design Standards: design-standards.md
   - Contributing:
     - Reporting a bug: contributing/reporting-a-bug.md
     - Reporting a docs issue: contributing/reporting-a-docs-issue.md
@@ -67,10 +80,10 @@ markdown_extensions:
 extra: 
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ONSdigital/ons_mkdocs_theme
+      link: https://github.com/FoodStandardsAgency/FSA_mkdocs_theme
 
 copyright: |
-  &copy;  <a href="https://www.ons.gov.uk">Office for National Statistics 2024</a>
+  &copy; <a href="https://www.food.gov.uk">Food Standards Agency 2026</a>
 
 watch:
   - docs/

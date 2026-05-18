@@ -1,7 +1,7 @@
 ---
 hide:
   - navigation
-title: ONS MkDocs Theme - Setup
+title: FSA MkDocs Theme - Setup
 ---
 
 <style>
@@ -23,9 +23,9 @@ To be able to use this theme, you need to be using at least **Python v3.11**.
 
 #### with pip
 
-ONS MkDocs Theme is published as a Python package and can be installed with
+FSA MkDocs Theme is published as a Python package and can be installed with
 `pip`, ideally by using a [virtual environment]. Open up a terminal and install
-ONS MkDocs Theme with:
+FSA MkDocs Theme with:
 
 ```
 pip install ons_mkdocs_theme
