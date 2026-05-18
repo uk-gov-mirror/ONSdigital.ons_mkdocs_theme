@@ -9,31 +9,30 @@ https://brandhub.food.gov.uk/d/EFmxfa6xzAAW
 
 ## :red_car: Getting Started
 
-Setting up your documentation site to use this theme couldn't be easier. The quickest and easiest way to get up and running is to install with `pip`.
+Setting up your documentation site to use this theme is straightforward. We recommend using modern Python dependency managers like [Poetry][poetry] or [UV][uv] for the best experience.
 
-To be able to use this theme, you need to be using at least **Python v3.8**.
+To be able to use this theme, you need to be using at least **Python v3.10**.
 
 ### :computer: Installation
 
-#### with pip
+#### with Poetry
 
-FSA MkDocs Theme is published as a Python package and can be installed with
-`pip`, ideally by using a [virtual environment][virtual environment]. Open up a terminal and install
-FSA MkDocs Theme with:
+Add FSA MkDocs Theme to your project's dependencies:
 
 ```
-pip install fsa_mkdocs_theme
+poetry add fsa_mkdocs_theme
 ```
 
-This will automatically install compatible versions of all dependencies:
+#### with UV
+
+Install the theme using UV:
+
+```
+uv pip install fsa_mkdocs_theme
+```
+
+Both will automatically install compatible versions of all dependencies:
 [MkDocs], [Markdown], [Pygments] and [Python Markdown Extensions][Python Markdown Extensions].
-
-!!! tip
-
-    If you don't have prior experience with Python, we recommend reading
-    [Using Python's pip to Manage Your Projects' Dependencies], which is a
-    really good introduction on the mechanics of Python package management and
-    helps you troubleshoot if you run into errors.
 
 #### with git
 
@@ -58,17 +57,23 @@ To clone the theme files, run the following command:
 git clone https://github.com/FoodStandardsAgency/fsa_mkdocs_theme
 ```
 
-Next, install the theme and its dependencies with:
+Next, install the theme and its dependencies with Poetry or UV:
 
 ```
-pip install -e .
+poetry install
+```
+
+or
+
+```
+uv sync
 ```
 
 [GitHub]: https://github.com/FoodStandardsAgency/fsa_mkdocs_theme
-[virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
+[poetry]: https://python-poetry.org/
+[uv]: https://docs.astral.sh/uv/
 [semantic versioning]: https://semver.org/
 [MkDocs]: https://mkdocs.org
 [Markdown]: https://python-markdown.github.io/
 [Pygments]: https://pygments.org/
 [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-[Using Python's pip to Manage Your Projects' Dependencies]: https://realpython.com/what-is-pip/
